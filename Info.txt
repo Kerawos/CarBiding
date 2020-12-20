@@ -1,0 +1,14 @@
+﻿Klient:
+- strona glowna (lista samochodow aktualnych/ 50 strone / panel szukania)
+- strony razor z autami szczegoly z glownej
+- strona info
+- strona logowania
+- panel urzytkownika (zmiana hasla, zmiana danych, dostepne srodki, zasilanie konta, aktualne aukcje, historia aukcji)
+
+Server:
+- baza z informacjami o userze
+- baza z informacjami o samochodach
+- scrapowanie danych z API do jakis serwiow z ogloszeniami i update bazy
+- archiwizacja zakonczonych aukcji
+- notyfikacja uzytkowniakow 
+
