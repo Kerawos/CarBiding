@@ -14,7 +14,9 @@ namespace CarBiding.DBFakeData
         {
             cars = new List<Car>
             {
-                new Car ()
+                new Car (1, "Audi S6", DateTime.Now, DateTime.Now.AddDays(2)),
+                new Car(2, "Subaru Impreza", DateTime.Now, DateTime.Now.AddDays(3)),
+                new Car(3, "Renault Clio", DateTime.Now, DateTime.Now.AddDays(5)),
             };
         }
 

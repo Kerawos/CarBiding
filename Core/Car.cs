@@ -25,6 +25,14 @@ namespace CarBiding
             this.Info = info;
             this.Images = images;
         }
+
+        public Car(int iD, string title, DateTime timeAuctionStart, DateTime timeAuctionEnd)
+        {
+            this.ID = iD;
+            this.Title = title;
+            this.TimeAuctionStart = timeAuctionStart;
+            this.TimeAuctionEnd = timeAuctionEnd;
+        }
     }
 
     
