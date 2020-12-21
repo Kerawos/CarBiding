@@ -12,6 +12,8 @@ namespace CarBiding.Pages
     {
         private readonly ICarData carData;
 
+        public IEnumerable<Car> Cars { get; set; }
+
         public CarsModel(ICarData carData)
         {
             this.carData = carData;
@@ -19,6 +21,7 @@ namespace CarBiding.Pages
 
         public void OnGet()
         {
+            Cars = carData.GetAll();
         }
     }
 }
