@@ -23,7 +23,7 @@ namespace CarBiding.DBFakeData
         {
             return from c in cars
                    orderby c.TimeAuctionEnd
-                   descending
+                   ascending
                    select c;
         }
     }

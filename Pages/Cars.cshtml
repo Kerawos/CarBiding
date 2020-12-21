@@ -4,3 +4,17 @@
 }
 
 <h1>Aktualne Aukcje</h1>
+
+<table class="table">
+    @foreach(var car in Model.Cars)
+    {
+        <tr>
+            <td>@car.Title</td>
+            <td>@car.ImageMini</td>
+            <td>@car.TimeAuctionEnd</td>
+            <td>@car.ID</td>
+        </tr>
+    }
+</table>
+
+

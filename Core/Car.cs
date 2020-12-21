@@ -14,6 +14,7 @@ namespace CarBiding
         public string LinkToAuction { get; set; }
         public string Info { get; set; }
         public List<String> Images { get; set; }
+        public string ImageMini { get; set; }
 
         public Car(int iD, string title, DateTime timeAuctionStart, DateTime timeAuctionEnd, string linkToAuction, string info, List<string> images)
         {
@@ -24,6 +25,7 @@ namespace CarBiding
             this.LinkToAuction = linkToAuction;
             this.Info = info;
             this.Images = images;
+            this.ImageMini = Images[0];
         }
 
         public Car(int iD, string title, DateTime timeAuctionStart, DateTime timeAuctionEnd)
