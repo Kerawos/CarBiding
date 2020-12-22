@@ -18,9 +18,12 @@ namespace CarBiding.Pages
             CarData = carData;
         }
 
-        public void OnGet(int carID)
+        public IActionResult OnGet(int carID)
         {
             Car = CarData.GetByID(carID);
+            if (Car == null)
+                return RedirectToPage("./NotFound");
+            return Page();
         }
     }
 }
