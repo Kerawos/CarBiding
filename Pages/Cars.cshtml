@@ -11,7 +11,7 @@
             <input type="search" class="form-control"  
                    asp-for="SearchTerm"/>
             <span class="input-group-btn">
-                <button class="btn btn-dark">
+                <button class="btn btn-primary">
                     Szukaj
                 </button>
             </span>
@@ -29,7 +29,7 @@
             <td>@car.ImageMini</td>
             <td>@car.TimeAuctionEnd</td>
             <td>
-                <a class="btn btn-lg"
+                <a class="btn btn-info"
                    asp-page="./Detail" asp-route-carID="@car.ID">
                    
                     Detale
