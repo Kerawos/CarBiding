@@ -11,8 +11,10 @@ namespace CarBiding.Pages
     public class CarsModel : PageModel
     {
         private readonly ICarData carData;
-
         public IEnumerable<Car> Cars { get; set; }
+        
+        [BindProperty (SupportsGet = true)]
+        public string SearchTerm { get; set;}
 
         public CarsModel(ICarData carData)
         {
@@ -21,7 +23,9 @@ namespace CarBiding.Pages
 
         public void OnGet()
         {
-            Cars = carData.GetAll();
+            //if (string.IsNullOrEmpty(searchTerm))
+            //Cars = carData.GetAll();
+            Cars = carData.GetAllByName(SearchTerm);
         }
     }
 }

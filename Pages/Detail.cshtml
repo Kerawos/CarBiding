@@ -1,0 +1,24 @@
+﻿@page
+@model CarBiding.Pages.DetailModel
+@{
+}
+
+<h2>@Model.Car.Title</h2>
+<div>
+    Koniec Aukcji: @Model.Car.TimeAuctionEnd 
+</div>
+<div>
+    Numer Aukcji: @Model.Car.ID
+</div>
+<div>
+    Zdjęcia
+    @for (int i = 0; i < @Model.Car.Images.Count; i++)
+    {
+        @(i-1) @Model.Car.Images[i]
+    } 
+</div>
+<div>
+    Informacje: @Model.Car.Info
+</div>
+
+<a asp-page="./Cars" class="btn btn-light">Aukcje</a>

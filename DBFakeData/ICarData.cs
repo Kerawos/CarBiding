@@ -8,6 +8,7 @@ namespace CarBiding.DBFakeData
     public interface ICarData
     {
         IEnumerable<Car> GetAll();
+        IEnumerable<Car> GetAllByName(string name);
     }
     
 }

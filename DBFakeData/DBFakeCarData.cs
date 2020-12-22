@@ -26,5 +26,14 @@ namespace CarBiding.DBFakeData
                    ascending
                    select c;
         }
+
+        public IEnumerable<Car> GetAllByName(string name = null)
+        {
+            return from c in cars
+                   where string.IsNullOrEmpty(name) || c.Title.StartsWith(name)
+                   orderby c.Title
+                   ascending
+                   select c;
+        }
     }
 }
