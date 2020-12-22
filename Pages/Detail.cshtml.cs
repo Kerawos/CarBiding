@@ -11,9 +11,9 @@ namespace CarBiding.Pages
     {
         public Car Car { get; set; }
 
-        public void OnGet()
+        public void OnGet(int carID)
         {
-
+            Car = new Car();
         }
     }
 }

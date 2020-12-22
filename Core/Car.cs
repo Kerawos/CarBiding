@@ -35,6 +35,11 @@ namespace CarBiding
             this.TimeAuctionStart = timeAuctionStart;
             this.TimeAuctionEnd = timeAuctionEnd;
         }
+
+        public Car()
+        {
+
+        }
     }
 
     
