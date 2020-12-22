@@ -1,4 +1,5 @@
-﻿@page
+﻿@page "{carID:int}"
+
 @model CarBiding.Pages.DetailModel
 @{
 }
@@ -9,13 +10,6 @@
 </div>
 <div>
     Numer Aukcji: @Model.Car.ID
-</div>
-<div>
-    Zdjęcia
-    @for (int i = 0; i < @Model.Car.Images.Count; i++)
-    {
-        @(i-1) @Model.Car.Images[i]
-    } 
 </div>
 <div>
     Informacje: @Model.Car.Info
