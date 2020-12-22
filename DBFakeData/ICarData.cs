@@ -9,6 +9,7 @@ namespace CarBiding.DBFakeData
     {
         IEnumerable<Car> GetAll();
         IEnumerable<Car> GetAllByName(string name);
+        Car GetByID(int id);
     }
     
 }

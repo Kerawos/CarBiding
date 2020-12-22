@@ -35,5 +35,10 @@ namespace CarBiding.DBFakeData
                    ascending
                    select c;
         }
+
+        public Car GetByID(int id)
+        {
+            return cars.SingleOrDefault(c => c.ID == id);
+        }
     }
 }
