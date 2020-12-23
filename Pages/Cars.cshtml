@@ -26,8 +26,10 @@
     {
         <tr>
             <td>@car.Title</td>
-            <td>@car.ImageMini</td>
-            <td>@car.TimeAuctionEnd</td>
+            <td> 
+                <img src="@car.ImageMini" class="img-thumbnail"/>
+            </td>
+            <td>Koniec Aukcji: <br /> @car.TimeAuctionEnd</td>
             <td>
                 <a class="btn btn-info"
                    asp-page="./Detail" asp-route-carID="@car.ID">
