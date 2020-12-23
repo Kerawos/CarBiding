@@ -26,7 +26,6 @@ namespace CarBiding.DBFakeData
                 new List<String>
                 {
                     "https://www.autocentrum.pl/ac-file/gallery-photo/565fcbdaf80f0a963506fe7d/subaru-impreza-wrx-special-edition.jpg",
-                    "https://www.autocentrum.pl/ac-file/gallery-photo/565fcbdaf80f0a963506fe7d/subaru-impreza-wrx-special-edition.jpg",
                     "https://www.autocentrum.pl/ac-file/gallery-photo/565fcbd5f80f0a963506fe29/subaru-impreza-wrx-special-edition-02.jpg",
                     "https://www.autocentrum.pl/ac-file/gallery-photo/565fcbe0f80f0a963506fed1/subaru-impreza-wrx-special-edition-14.jpg",
                     "https://www.autocentrum.pl/ac-file/gallery-photo/565fcbecf80f0a963506ff85/subaru-impreza-wrx-special-edition-29.jpg"

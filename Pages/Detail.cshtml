@@ -4,30 +4,50 @@
 @{
 }
 
-<h2>@Model.Car.Title</h2>
+<h2 class="card-header">@Model.Car.Title</h2>
 
 <div>
-    Koniec Aukcji: <br />@Model.Car.TimeAuctionEnd 
-</div>
-
-<div>
-    <table>
+    <table class="table-primary">
         <tr>
-            <td>Numer Aukcji2:</td>
+            <td>Numer Aukcji:</td>
             <td>@Model.Car.ID</td>
         </tr>
     </table>
 </div>
 
 <div>
+    <table class="table-info">
+        <tr>
+            <td>Koniec Aukcji:</td>
+            <td>@Model.Car.TimeAuctionEnd</td>
+        </tr>
+    </table>
+</div>
 
-    @foreach(String im in Model.Car.Images)
+<hr />
+
+<div>
+
+    @foreach (String im in Model.Car.Images)
     {
-    <img src=@im class="img-fluid" alt="Responsive image">
+        <img src=@im class="img-fluid" alt="Responsive image">
     }
 </div>
 
+<hr />
+
 <div>
-    Dodatkowe Informacje: <br />@Model.Car.Info
+    Dodatkowe Informacje:
+    <br />
+    <p class="font-weight-light">
+        @Model.Car.Info
+    </p>
 </div>
+
+<hr />
+
+<div>
+    <button class="btn btn-primary btn-lg btn-block" >Licytuj</button>
+</div>
+
 
