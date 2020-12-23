@@ -5,13 +5,29 @@
 }
 
 <h2>@Model.Car.Title</h2>
+
 <div>
-    Koniec Aukcji: @Model.Car.TimeAuctionEnd 
+    Koniec Aukcji: <br />@Model.Car.TimeAuctionEnd 
 </div>
+
 <div>
-    Numer Aukcji: @Model.Car.ID
+    <table>
+        <tr>
+            <td>Numer Aukcji2:</td>
+            <td>@Model.Car.ID</td>
+        </tr>
+    </table>
 </div>
+
 <div>
-    Informacje: @Model.Car.Info
+
+    @foreach(String im in Model.Car.Images)
+    {
+    <img src=@im class="img-fluid" alt="Responsive image">
+    }
+</div>
+
+<div>
+    Dodatkowe Informacje: <br />@Model.Car.Info
 </div>
 
