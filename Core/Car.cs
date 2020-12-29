@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CarBiding.Core;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -13,10 +14,11 @@ namespace CarBiding
         public DateTime TimeAuctionEnd { get; set; }
         public string LinkToAuction { get; set; }
         public string Info { get; set; }
-        public List<String> Images { get; set; }
+        public List<Image> Images { get; set; }
+        
         public string ImageMini { get; set; }
 
-        public Car(int iD, string title, DateTime timeAuctionStart, DateTime timeAuctionEnd, string linkToAuction, string info, List<string> images)
+        public Car(int iD, string title, DateTime timeAuctionStart, DateTime timeAuctionEnd, string linkToAuction, string info, List<Image> images)
         {
             this.ID = iD;
             this.Title = title;
@@ -25,7 +27,7 @@ namespace CarBiding
             this.LinkToAuction = linkToAuction;
             this.Info = info;
             this.Images = images;
-            this.ImageMini = Images[0];
+            this.ImageMini = images.SingleOrDefault().URL;
         }
 
         public Car(int iD, string title, DateTime timeAuctionStart, DateTime timeAuctionEnd)
