@@ -7,9 +7,9 @@ namespace CarBiding.Core
 {
     public class Image
     {
-        public string URL { get; set;}
+        public String URL { get; set;}
 
-        public Image(string url)
+        public Image(String url)
         {
             this.URL = url;
         }

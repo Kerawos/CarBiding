@@ -27,7 +27,7 @@ namespace CarBiding
             this.LinkToAuction = linkToAuction;
             this.Info = info;
             this.Images = images;
-            if (!Images.Any())
+            if (Images.Any())
                 this.ImageMini = Images.First();
             else
                 this.ImageMini = new Image("");
