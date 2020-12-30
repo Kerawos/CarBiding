@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CarBiding.Core;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -23,21 +24,21 @@ namespace CarBiding.DBFakeData
                 "WRX doczekało się jesienią 2012 roku nowej edycji specjalnej. Ubrano ją w pomarańczowe nadwozie " +
                 "z czarnymi lusterkami, czarnymi naklejkami i unikalnymi emblematami, całość osadzono na czarnych felgach, " +
                 "a w środku skryto specjalne, czarno-pomarańczowe wykończenie.", 
-                new List<String>
+                new List<Image>
                 {
-                    "https://www.autocentrum.pl/ac-file/gallery-photo/565fcbdaf80f0a963506fe7d/subaru-impreza-wrx-special-edition.jpg",
-                    "https://www.autocentrum.pl/ac-file/gallery-photo/565fcbd5f80f0a963506fe29/subaru-impreza-wrx-special-edition-02.jpg",
-                    "https://www.autocentrum.pl/ac-file/gallery-photo/565fcbe0f80f0a963506fed1/subaru-impreza-wrx-special-edition-14.jpg",
-                    "https://www.autocentrum.pl/ac-file/gallery-photo/565fcbecf80f0a963506ff85/subaru-impreza-wrx-special-edition-29.jpg"
+                    new Image("https://www.autocentrum.pl/ac-file/gallery-photo/565fcbdaf80f0a963506fe7d/subaru-impreza-wrx-special-edition.jpg"),
+                    new Image("https://www.autocentrum.pl/ac-file/gallery-photo/565fcbd5f80f0a963506fe29/subaru-impreza-wrx-special-edition-02.jpg"),
+                    new Image("https://www.autocentrum.pl/ac-file/gallery-photo/565fcbe0f80f0a963506fed1/subaru-impreza-wrx-special-edition-14.jpg"),
+                    new Image("https://www.autocentrum.pl/ac-file/gallery-photo/565fcbecf80f0a963506ff85/subaru-impreza-wrx-special-edition-29.jpg")
                 }));
             cars.Add(new Car(2, "Audi S6 Lambo!", DateTime.Now.AddDays(-20), DateTime.Now.AddDays(+1), 
-                "", "", new List<String>
+                "", "", new List<Image>
                 {
-                    "https://www.autocentrum.pl/ac-file/gallery-photo/565faebff80f0a9635052e3b/audi-s6-avant-2008-03.jpg",
-                    "https://www.autocentrum.pl/ac-file/gallery-photo/565faec5f80f0a9635052e9b/audi-s6-avant-2008-02.jpg",
-                    "https://www.autocentrum.pl/ac-file/gallery-photo/565faec6f80f0a9635052eb3/audi-s6-avant-2008-13.jpg",
-                    "https://www.autocentrum.pl/ac-file/gallery-photo/565faebef80f0a9635052e2f/audi-s6-avant-2008-20.jpg",
-                    "https://www.autocentrum.pl/ac-file/gallery-photo/565faec9f80f0a9635052ed7/audi-s6-avant-2008-19.jpg"
+                    new Image("https://www.autocentrum.pl/ac-file/gallery-photo/565faebff80f0a9635052e3b/audi-s6-avant-2008-03.jpg"),
+                    new Image("https://www.autocentrum.pl/ac-file/gallery-photo/565faec5f80f0a9635052e9b/audi-s6-avant-2008-02.jpg"),
+                    new Image("https://www.autocentrum.pl/ac-file/gallery-photo/565faec6f80f0a9635052eb3/audi-s6-avant-2008-13.jpg"),
+                    new Image("https://www.autocentrum.pl/ac-file/gallery-photo/565faebef80f0a9635052e2f/audi-s6-avant-2008-20.jpg"),
+                    new Image("https://www.autocentrum.pl/ac-file/gallery-photo/565faec9f80f0a9635052ed7/audi-s6-avant-2008-19.jpg")
                 }
                 ));
 
@@ -48,11 +49,11 @@ namespace CarBiding.DBFakeData
                 "Trophy ten sam silnik będzie posiadał liczniejsze o 20 sztuk stado koni mechanicznych. " +
                 "W obu przypadkach silnik współpracuje z 6-biegową skrzynią dwusprzęgłową EDC, która posiada " +
                 "tryb zmiany przełożeń za pomocą łopatek umieszczonych przy kierownicy.",
-                new List<String> 
+                new List<Image> 
                 {
-                    "https://www.autocentrum.pl/ac-file/news/58931350592c7d8b478c11c9/renault-clio-rs-po-zmianach.jpg",
-                    "https://www.autocentrum.pl/ac-file/news/5893134f592c7d8b478c11b5/renault-clio-rs-po-zmianach-10.jpg",
-                    "https://www.autocentrum.pl/ac-file/news/5893134d592c7d8b478c11a1/renault-clio-rs-po-zmianach-08.jpg"
+                    new Image("https://www.autocentrum.pl/ac-file/news/58931350592c7d8b478c11c9/renault-clio-rs-po-zmianach.jpg"),
+                    new Image("https://www.autocentrum.pl/ac-file/news/5893134f592c7d8b478c11b5/renault-clio-rs-po-zmianach-10.jpg"),
+                    new Image("https://www.autocentrum.pl/ac-file/news/5893134d592c7d8b478c11a1/renault-clio-rs-po-zmianach-08.jpg")
                 }
                 ));
             return cars;

@@ -8,6 +8,12 @@ namespace CarBiding.Core
     public class Image
     {
         public string URL { get; set;}
+
+        public Image(string url)
+        {
+            this.URL = url;
+        }
     }
+
    
 }

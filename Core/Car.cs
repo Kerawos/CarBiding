@@ -14,9 +14,9 @@ namespace CarBiding
         public DateTime TimeAuctionEnd { get; set; }
         public string LinkToAuction { get; set; }
         public string Info { get; set; }
-        public List<Image> Images { get; set; }
+        public IEnumerable<Image> Images { get; set; }
         
-        public string ImageMini { get; set; }
+        public Image ImageMini { get; set; }
 
         public Car(int iD, string title, DateTime timeAuctionStart, DateTime timeAuctionEnd, string linkToAuction, string info, List<Image> images)
         {
@@ -27,7 +27,10 @@ namespace CarBiding
             this.LinkToAuction = linkToAuction;
             this.Info = info;
             this.Images = images;
-            this.ImageMini = images.SingleOrDefault().URL;
+            if (Images.Any())
+                this.ImageMini = Images.First();
+            else
+                this.ImageMini = new Image("");
         }
 
         public Car(int iD, string title, DateTime timeAuctionStart, DateTime timeAuctionEnd)
@@ -40,7 +43,7 @@ namespace CarBiding
 
         public Car()
         {
-
+            
         }
     }
 

@@ -27,11 +27,13 @@
 <hr />
 
 <div>
+   
 
-    @foreach (String im in Model.Car.Images)
+    @foreach (var im in Model.Car.Images)
     {
-        <img src=@im class="img-fluid" alt="Responsive image">
+        <img src=@im.URL class="img-fluid" alt="Responsive image">
     }
+
 </div>
 
 <hr />
