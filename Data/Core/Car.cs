@@ -15,7 +15,6 @@ namespace CarBiding
         public string LinkToAuction { get; set; }
         public string Info { get; set; }
         public IEnumerable<Image> Images { get; set; }
-        
         public Image ImageMini { get; set; }
 
         public Car(int iD, string title, DateTime timeAuctionStart, DateTime timeAuctionEnd, string linkToAuction, string info, List<Image> images)
